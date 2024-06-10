@@ -1,6 +1,6 @@
 # Core Pkgs
 import streamlit as st
-st.set_page_config(page_title="Covid19 Detection Tool", page_icon="Images/covid19.jpeg", layout='centered', initial_sidebar_state='auto')
+st.set_page_config(page_title="Covid19 Detection Tool", page_icon="./Images/covid19.jpeg", layout='centered', initial_sidebar_state='auto')
 
 import os
 import time
@@ -25,7 +25,7 @@ def main():
 	st.markdown(html_templ,unsafe_allow_html=True)
 	st.write("A simple proposal for Covid-19 Diagnosis powered by Deep Learning and Streamlit")
 
-	st.sidebar.image("Images/covid19.jpeg",width=300)
+	st.sidebar.image("./Images/covid19.jpeg",width=300)
 
 	image_file = st.sidebar.file_uploader("Upload an X-Ray Image (jpg, png or jpeg)",type=['jpg','png','jpeg'])
 
