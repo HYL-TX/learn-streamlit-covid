@@ -1,6 +1,6 @@
 # Core Pkgs
 import streamlit as st
-#st.set_page_config(page_title="Covid19 Detection Tool", page_icon="Images/covid19.jpeg", layout='centered', initial_sidebar_state='auto')
+st.set_page_config(page_title="Covid19 Detection Tool", page_icon="Images/covid19.jpeg", layout='centered', initial_sidebar_state='auto')
 
 import os
 import time
