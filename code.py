@@ -79,7 +79,7 @@ def main():
 				X_Ray = X_Ray.reshape(1, 224, 224, 3)
 
 				#Pre-trained CNN Model loading
-				model = tf.keras.models.load_model("./Chapter10/best-vgg16-0402-model.h5")
+				model = tf.keras.models.load_model("./models/cnn-model.h5")
 
 				#Diagnosis (Prediction== Binary Classification)
 				diagnosis_proba = model.predict(X_Ray)
