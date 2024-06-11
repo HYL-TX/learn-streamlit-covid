@@ -2,19 +2,18 @@
 import streamlit as st
 st.set_page_config(page_title="Covid19 Detection Tool", page_icon="Images/covid19.jpeg", layout='centered', initial_sidebar_state='auto')
 
-import os
-import time
-
-# Viz Pkgs
-import cv2
-from PIL import Image,ImageEnhance
-import numpy as np 
-
-# AI Pkgs
-import tensorflow as tf
-
-
 def main():
+	import os
+	import time
+
+	# Viz Pkgs
+	import cv2
+	from PIL import Image,ImageEnhance
+	import numpy as np 
+
+	# AI Pkgs
+	import tensorflow as tf
+	
 	"""Simple Tool for Covid-19 Detection from Chest X-Ray"""
 	html_templ = """
 	<div style="background-color:blue;padding:10px;">
